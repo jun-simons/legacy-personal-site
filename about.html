@@ -1,0 +1,80 @@
+<link href="styles/styles.css" rel="stylesheet">
+<link href="styles/hamburgers.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<head>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+    <title>Jun Simons</title>
+</head>
+<body>
+    <div class="header">
+        <button class="hamburger hamburger--collapse hamburger--accessible js-hamburger" id="menu-toggle" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button>  
+        <div class = "nav" id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="parallax">
+        <div class="layer" data-depth=".6">
+            <div class="about-me" id="sp1">
+                <h1>About Me</h1>
+                <p>Freshman Dual Major in Computer Science and Computer Systems Engineering<br><br>
+                <p><b>Interests:</b></p>
+                <ul>
+                    <li>Embedded Systems</li>
+                    <li>Microcontrollers: Arduino, TI MSP432</li>
+                    <li>Connected systems, IOT</li>
+                    <li>Potential applications of machine learning to systems</li>
+                    <li>All aspects of web development</li>
+                </ul>
+                <p><br><b>Other things I do:</b></p>
+                <ul>
+                    <li>Classical Ballet</li>
+                    <li>Violin (Music Performance Minor)</li>
+                    <li>Gardening</li>
+                </ul>
+                
+            </div>
+            
+            <div class="about-butotn">
+                <a href = "#sp1"></a>
+            </div>
+            
+            <div class="about-this-site">
+                <h1>About This Website</h1>
+                <p>I made this site in highschool while experimenting with fun site styles. <br>
+                    A new, much improved website is in the works.<br><br>
+                    This website was made with: <br>
+                </p>
+                <ul>
+                    <li>HTML/CSS/JS</li>
+                    <li>Particles.js</li>
+                    <li>Parallax.js</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer" data-depth=".4">
+            <div id="particles-js"></div>
+        </div>
+    </div>
+</body>
+
+<script>document.getElementById("nav").classList.toggle("active"); //initially inactive</script>
+<script src="JS/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+<script src="JS/app.js"></script>
+<script src="JS/util.js"></script>

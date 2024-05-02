@@ -1,0 +1,44 @@
+<link href="styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Jun's Christmas Countdown</title>
+<div id="particles-js">
+    <div class="nav">
+        <button onclick="toggleSettings()"><i class="fas fa-cog"></i></button>
+    </div>
+
+    <div class="settings" id="settingsPanel">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="closeButton" onclick="toggleSettings()">&times;</div>
+            <h1>Settings</h1>
+            <p>This beautiful and mind-blowing site is brought to you by <b>Jun Simons</b> <br>
+            This settings menu is rather incomplete </p>
+        
+            <button class="themeButton" onclick="changeTheme()">Click to change theme</button>
+            <select id="settingsList" class="selectBox">
+                <option value="o1">This Doesnt Do Anything :(</option>
+                <option value="o2">It really doesnt</option>
+                <option value="o3">no</option>
+            </select>
+            
+            <!-- <button onclick="applySelection()">Jun is very cool</button> -->
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>Days Until Christmas:</h1>
+        <div id="countdown">
+            <div id="days" class="countdownDiv">5 days</div>
+            <div id="hours" class="countdownDiv">12 hours</div>
+            <div id="minutes" class="countdownDiv">40 minuts</div>
+            <div id="seconds" class="countdownDiv">39 seconds</div>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/f0243b2839.js" crossorigin="anonymous"></script>
+<script src="JS/particles.js"></script>
+<script src="JS/app.js"></script>
+<script src="JS/index.js"></script>
+<script src="JS/countdown.js"></script>
+<script src="JS/util.js"></script>"

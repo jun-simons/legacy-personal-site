@@ -1,0 +1,99 @@
+<link href="../../styles/styles.css" rel="stylesheet">
+<link href="../../styles/hamburgers.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<head>
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <title>[PROJECT NAME HERE]</title>
+    <script src="https://kit.fontawesome.com/f0243b2839.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <button class="hamburger hamburger--collapse hamburger--accessible js-hamburger" id="menu-toggle" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>  
+        <div class = "nav" id="nav">
+            <ul>
+                <li><a href="../../about.html">About</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button class="settings-button" id="settings-button" onclick="openSettings()"><i class="fas fa-cog"></i></button>
+    </div>
+    <div class = "settings" id="settings">
+        <button class="close-settings" onclick="closeSettings()">&times;</button>
+        <h1>settings</h1>
+        <h2 class="settings-theme-title">theme</h2>
+        <ul class="themes-list">
+            <li><button class="theme-button" id="theme1" onclick="theme1()">Sandstone (Default)</button></li>
+            <li><button class="theme-button" id="theme2" onclick="theme2()">Blueprint</button></li>
+            <li><button class="theme-button" id="theme3" onclick="theme3()">Pistachio</button></li>
+            <li><button class="theme-button" id="theme4" onclick="theme4()">Kristine</button></li>
+            <li><button class="theme-button" id="theme5" onclick="theme5()">Sodapop</button></li>
+        </ul>
+        <h2 class="settings-particle-title">enable particles</h2>
+        <label class="particle-switch">
+            <input type="checkbox" id="particles-check" onclick=toggleParticles() checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div id="parallax">
+        <div class="layer" data-depth=".3">
+            <div onclick="window.open('https://pastebin.com/WmK6NpfR');" style="cursor: pointer;" class="about-this-project">
+                <h1>Bunger Bot 1.0</h1> <!-- TODO: Change name -->
+                <h2>a multipurpose discord bot</h2>
+                </p>
+                <div class="project-table">
+                    <div class="sidebyside">
+                        <div class="left-side">
+                            <ul class = "left-side-list">
+                                <li class = "title-list"><b>Selected Features:</b></li>
+                                <li>create poll</li>
+                                <li>ping users repetatedly</li>
+                                <li>create/destroy voice channel</li>
+                                <li>generate memes</li>
+                                <li>generate fact for any number</li>
+                                <li>trivia with 8 categories</li>
+                                <li>susometer</li>
+                            </ul>
+                        </div>
+                        <div class = "right-side">
+                            <p class = "right-side-text">
+                                A multipurpose modular discord bot with personalized features.
+                                <br><br>
+                                A wide range of trivia topics and questions are available from the Open Trivia Database API.  The Numbers
+                                API brings up an interesting fact for any number.  A Discord bot is a great way to experiment with how
+                                Discord functions, and play with the many interesting APIs out there.
+                                <a href="https://pastebin.com/WmK6NpfR">View the code on pastebin</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="layer" id="particle-identifier" data-depth=".4">
+            <div id="particles-js"></div>
+        </div>
+        <!-- <div class="layer" data-depth=".3">
+            <div class="button">
+                <a href="projects.html">My Projects</a>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+<script>document.getElementById("nav").classList.toggle("active"); //initially inactive</script>
+<script src="../../JS/particles.min.js"></script>
+<script src="../../https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+<script src="../../JS/app.js"></script>
+<script src="../../JS/util.js"></script>
